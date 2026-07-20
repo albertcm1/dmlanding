@@ -1,0 +1,29 @@
+/* Campaign treatment inspired by the referenced summit landing page. */
+:root{--hero-black:#070a12;--violet:#7c66ff;--lime:#c0f55a}
+.launch-site-dark .launch-header{background:var(--hero-black);border-bottom-color:rgba(255,255,255,.1)}
+.launch-site-dark .launch-logo{color:#fff}
+.launch-site-dark .launch-logo-mark{background:var(--lime);color:#070a12}
+.launch-site-dark .launch-logo .logo-dot{color:#b7c2ff}
+.launch-site-dark .launch-nav,.launch-site-dark .text-link{color:#d7dbea}
+.launch-site-dark .launch-nav a:hover,.launch-site-dark .text-link:hover{color:var(--lime)}
+.launch-site-dark .header-cta{background:var(--lime);color:#070a12;box-shadow:none}
+.launch-site-dark .header-cta:hover{background:#d1ff75;box-shadow:0 10px 22px rgba(192,245,90,.16)}
+.campaign-strip{background:var(--lime);color:#070a12;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.campaign-strip .launch-wrap{min-height:35px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.campaign-strip span:last-child{display:flex;align-items:center;gap:7px}
+.launch-site-dark .hero-stage{background:var(--hero-black)}
+.launch-site-dark .hero-grid{opacity:.38}
+.launch-site-dark .hero-stage:after{background:radial-gradient(circle at 50% 12%,rgba(124,102,255,.28),transparent 34%),radial-gradient(circle at 8% 78%,rgba(192,245,90,.13),transparent 30%)}
+.launch-site-dark .eyebrow-light{color:var(--lime)}
+.launch-site-dark .hero-content h1 span,.launch-site-dark .final-cta h2 span{color:var(--lime)}
+.launch-site-dark .hero-content h1,.launch-site-dark .final-cta h2{letter-spacing:-.085em}
+.launch-site-dark .btn-blue{background:var(--violet);color:#fff;box-shadow:0 12px 28px rgba(124,102,255,.26)}
+.launch-site-dark .btn-blue:hover{background:#927fff;box-shadow:0 15px 32px rgba(124,102,255,.35)}
+.launch-site-dark .audit-form{box-shadow:0 24px 70px rgba(0,0,0,.38)}
+.launch-site-dark .hero-note{color:#9da7bb}
+.launch-site-dark .hero-surface-wrap{margin-top:76px}
+.launch-site-dark .product-surface{border-color:rgba(192,245,90,.24)}
+.launch-site-dark .product-card-feature{background:#10162a;border-color:#10162a}
+.launch-site-dark .final-cta{background:var(--hero-black)}
+@media (max-width:900px){.launch-site-dark .launch-nav{background:var(--hero-black);border-color:rgba(255,255,255,.12)}.launch-site-dark .launch-nav>a{border-bottom-color:rgba(255,255,255,.1);color:#d7dbea}.launch-site-dark .menu-button{background:transparent;border-color:rgba(255,255,255,.2);color:#fff}.campaign-strip .launch-wrap{min-height:42px;font-size:9px}}
+@media (max-width:560px){.campaign-strip .launch-wrap{align-items:flex-start;flex-direction:column;gap:2px;padding-top:7px;padding-bottom:7px}.launch-site-dark .hero-surface-wrap{margin-top:52px}}

@@ -1,0 +1,15 @@
+/* Public typography contract: Candidate 3 renders every surface in Roboto. */
+html,
+body,
+body *,
+body *::before,
+body *::after {
+  font-family: Roboto, ui-sans-serif, system-ui, sans-serif;
+}
+
+code,
+pre,
+kbd,
+samp {
+  font-family: Roboto, ui-sans-serif, system-ui, sans-serif;
+}

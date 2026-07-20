@@ -1,0 +1,12 @@
+node_modules/
+.next/
+out/
+.wrangler/
+.playwright-cli/
+*.log
+*.tsbuildinfo
+qa-*.png
+output/
+.env
+.env.*
+!.env.example
