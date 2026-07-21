@@ -7,12 +7,12 @@ import "./pricing.css";
 import { ThemeProvider, themeInitScript } from "./theme-provider";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://growth-workspace-search-atlas-3.pages.dev"),
-  title: { default: "Growth Workspace | Website growth, made clear.", template: "%s | Growth Workspace" },
-  description: "Growth Workspace helps website owners find the next best move across search, content, technical health, AI visibility, and conversion.",
+  metadataBase: new URL("https://digimetrics-search-atlas-3.pages.dev"),
+  title: { default: "Digimetrics.ai | Marketing made simple for everyone.", template: "%s | Digimetrics.ai" },
+  description: "Digimetrics.ai is an AI-powered audit, strategy, and action workspace for SEO, AI visibility, content, technical health, conversion, analytics, and paid-media context.",
   alternates: { canonical: "/" },
-  openGraph: { type: "website", siteName: "Growth Workspace", title: "Website growth, made clear.", description: "Find the next best move across search, content, technical health, AI visibility, and conversion.", images: [{ url: "/audience-team.png", width: 1536, height: 1024, alt: "Growth Workspace website growth workspace" }] },
-  twitter: { card: "summary_large_image", title: "Growth Workspace | Website growth, made clear.", description: "Turn website signals into your next best move.", images: ["/audience-team.png"] }
+  openGraph: { type: "website", siteName: "Digimetrics.ai", title: "Marketing made simple for everyone.", description: "Everything you need to market and grow, with an AI concierge to guide you.", images: [{ url: "/audience-marketing-teams.jfif", width: 1536, height: 1024, alt: "A Digimetrics.ai marketing team workspace" }] },
+  twitter: { card: "summary_large_image", title: "Digimetrics.ai | Marketing made simple for everyone.", description: "Everything you need to market and grow, with an AI concierge to guide you.", images: ["/audience-marketing-teams.jfif"] }
 };
 
 export default function Layout({ children }: Readonly<{ children: React.ReactNode }>) {

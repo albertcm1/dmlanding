@@ -1,3 +1,3 @@
 import type { MetadataRoute } from "next";
 export const dynamic = "force-static";
-export default function robots(): MetadataRoute.Robots { return { rules: { userAgent: "*", allow: "/" }, sitemap: "https://growth-workspace-search-atlas-3.pages.dev/sitemap.xml" }; }
+export default function robots(): MetadataRoute.Robots { return { rules: { userAgent: "*", allow: "/" }, sitemap: "https://digimetrics-search-atlas-3.pages.dev/sitemap.xml" }; }

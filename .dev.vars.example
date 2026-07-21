@@ -1,0 +1,7 @@
+# Cloudflare Pages Function configuration for /api/contact.
+# Copy to .dev.vars for local Pages development. Never commit real credentials.
+RESEND_API_KEY=
+CONTACT_TO=contact@mediaone.co
+CONTACT_FROM=
+TURNSTILE_SECRET_KEY=
+NEXT_PUBLIC_TURNSTILE_SITE_KEY=

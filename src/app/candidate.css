@@ -767,3 +767,104 @@
 @media (prefers-reduced-motion: reduce) {
   .growth-capability-body, .candidate-solution-grid .audience-route-card, .audience-route-card .solution-card-media img { animation: none; transition: none; }
 }
+
+/* Production credibility, contact, and audience refinements. */
+:root, body, button, input, textarea, select { font-family: Roboto, Arial, sans-serif !important; }
+.candidate-audit-error { grid-column: 1 / -1; margin: 2px 10px 0; color: #ffc4cf; font-size: 12px; font-weight: 700; }
+.candidate-audience-stage figure img, .audience-route-card .solution-card-media img, .solution-media-card img { width: 100%; height: 100%; object-fit: cover; }
+.candidate-audience-stage figure { border: 1px solid rgba(133,164,231,.24); }
+
+.candidate-credibility { padding: 122px 0; overflow: hidden; background: radial-gradient(circle at 50% 0, rgba(63,105,218,.18), transparent 48%), #050914; border-block: 1px solid rgba(126,165,236,.18); }
+.candidate-credibility .candidate-section-intro { max-width: 790px; margin-inline: auto; }
+.candidate-credibility .candidate-section-intro p { max-width: 670px; margin-inline: auto; }
+.client-wordmark-rail { display: flex; width: max-content; align-items: center; gap: 18px; margin: 52px auto 26px; animation: client-wordmark-scroll 26s linear infinite; }
+.client-wordmark-rail span { display: grid; min-width: 174px; height: 74px; place-items: center; padding: 0 22px; border: 1px solid rgba(135,168,232,.22); background: rgba(14,29,61,.65); color: #e7eeff; font-size: 18px; font-weight: 800; letter-spacing: .02em; text-align: center; }
+.credibility-markers { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 26px auto 20px; }
+.credibility-markers span { display: inline-flex; min-height: 38px; align-items: center; gap: 8px; padding: 0 13px; border: 1px solid rgba(155,130,237,.35); border-radius: 999px; background: rgba(104,76,172,.12); color: #dcd2ff; font-size: 12px; font-weight: 800; }
+.credibility-markers svg { color: #a991ff; }
+.credibility-relationship { margin: 0; color: #aebdd5; font-size: 13px; font-weight: 700; text-align: center; }
+@keyframes client-wordmark-scroll { to { transform: translateX(-25%); } }
+
+.monitor-panel--authentic { overflow: hidden; padding: 0; border-color: rgba(104,152,247,.48); background: #0b1734; }
+.monitor-panel--authentic img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: center; opacity: .96; }
+.monitor-panel--authentic figcaption { display: flex; align-items: center; gap: 8px; padding: 13px 16px; border-top: 1px solid rgba(126,165,236,.2); color: #c8d8f3; font-size: 12px; line-height: 1.45; }
+.monitor-panel--authentic figcaption::before { width: 8px; height: 8px; border-radius: 999px; background: #48d29d; box-shadow: 0 0 0 4px rgba(72,210,157,.15); content: ""; }
+
+.candidate-contact { padding: 116px 0; background: radial-gradient(circle at 20% 0, rgba(47,103,236,.18), transparent 36%), #050914; }
+.candidate-contact-grid { display: grid; grid-template-columns: minmax(0,.82fr) minmax(0,1.18fr); gap: 78px; align-items: start; }
+.candidate-contact-grid h1 { max-width: 590px; margin: 14px 0; color: #fff; font-size: clamp(43px,5vw,70px); line-height: .99; letter-spacing: -.035em; }
+.candidate-contact-grid > div > p { max-width: 580px; color: #b8c6dc; font-size: 17px; line-height: 1.65; }
+.contact-detail-list { display: grid; gap: 0; margin-top: 38px; border-top: 1px solid var(--candidate-line); }
+.contact-detail-list a, .contact-detail-list span { display: flex; min-height: 58px; align-items: center; gap: 12px; border-bottom: 1px solid var(--candidate-line); color: #dae6fa; font-size: 14px; text-decoration: none; }
+.contact-detail-list svg { flex: 0 0 auto; color: #7da7ff; }
+.contact-form { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; padding: 30px; border: 1px solid rgba(136,169,235,.32); border-radius: 8px; background: linear-gradient(145deg, rgba(20,46,99,.7), rgba(7,18,42,.96)); box-shadow: 0 25px 80px rgba(0,0,0,.2); }
+.contact-form label { display: grid; gap: 8px; color: #dce8fb; font-size: 12px; font-weight: 800; }
+.contact-form label:nth-of-type(3), .contact-form label:nth-of-type(5), .contact-form .contact-consent, .contact-form button, .contact-form p { grid-column: 1 / -1; }
+.contact-form input, .contact-form textarea { width: 100%; min-height: 50px; padding: 0 14px; border: 1px solid rgba(151,181,239,.32); border-radius: 6px; outline: 0; background: rgba(3,11,29,.5); color: #fff; font-size: 14px; }
+.contact-form textarea { min-height: 128px; padding-top: 14px; resize: vertical; }
+.contact-form input:focus, .contact-form textarea:focus { border-color: #6f9cff; box-shadow: 0 0 0 3px rgba(62,113,246,.2); }
+.contact-form .contact-consent { display: block; color: #9eafca; font-size: 12px; font-weight: 500; line-height: 1.5; }
+.contact-form .contact-consent a { color: #b6caff; }
+.contact-form button { min-height: 54px; border: 0; border-radius: 7px; background: #2563eb; color: #fff; cursor: pointer; font-weight: 800; }
+.contact-form button:hover { background: #3675f4; }
+.contact-form .form-error { margin: 0; color: #ffc2d0; font-size: 13px; }
+.contact-form .form-success { margin: 0; color: #8fe5bd; font-size: 13px; }
+
+.contact-production-form { display: grid; gap: 17px; padding: 30px; border: 1px solid rgba(136,169,235,.32); border-radius: 8px; background: linear-gradient(145deg, rgba(20,46,99,.7), rgba(7,18,42,.96)); box-shadow: 0 25px 80px rgba(0,0,0,.2); }
+.contact-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+.contact-production-form label { display: grid; gap: 8px; color: #dce8fb; font-size: 12px; font-weight: 800; }
+.contact-production-form input, .contact-production-form textarea { width: 100%; min-height: 50px; padding: 0 14px; border: 1px solid rgba(151,181,239,.32); border-radius: 6px; outline: 0; background: rgba(3,11,29,.5); color: #fff; font-size: 14px; }
+.contact-production-form textarea { min-height: 128px; padding-top: 14px; resize: vertical; }
+.contact-production-form input:focus, .contact-production-form textarea:focus { border-color: #6f9cff; box-shadow: 0 0 0 3px rgba(62,113,246,.2); }
+.contact-production-form .contact-consent { margin: 0; color: #9eafca; font-size: 12px; line-height: 1.5; }
+.contact-production-form .contact-consent a { color: #b6caff; }
+.contact-production-form button { display: inline-flex; min-height: 54px; align-items: center; justify-content: center; gap: 9px; border: 0; border-radius: 7px; background: #2563eb; color: #fff; cursor: pointer; font-weight: 800; }
+.contact-production-form button:hover { background: #3675f4; }
+.contact-production-form button:disabled { cursor: wait; opacity: .7; }
+.contact-production-form .contact-status { display: flex; gap: 9px; align-items: center; margin: 0; font-size: 13px; }
+.contact-production-form .contact-status.success { color: #8fe5bd; }
+.contact-production-form .contact-status.error { color: #ffc2d0; }
+.contact-honeypot { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+
+/* The contact page is intentionally its own editorial layout, not a variation of a product card. */
+.contact-page { background: #060914; }
+.contact-hero { padding: clamp(72px, 10vw, 132px) 0 clamp(42px, 6vw, 72px); background: radial-gradient(circle at 50% -20%, rgba(47,103,236,.34), transparent 56%), #060914; }
+.contact-hero .neon-wrap { max-width: 780px; text-align: center; }
+.contact-hero h1 { max-width: 710px; margin: 16px auto; color: #fff; font-size: clamp(42px, 5.4vw, 72px); line-height: 1; letter-spacing: 0; }
+.contact-hero p { max-width: 680px; margin: 0 auto; color: #b8c6dc; font-size: clamp(16px, 1.5vw, 18px); line-height: 1.6; }
+.contact-section { padding: clamp(36px, 6vw, 80px) 0 clamp(78px, 10vw, 132px); background: linear-gradient(180deg, #060914 0%, #090d18 100%); }
+.contact-production-grid { display: grid; grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr); gap: clamp(36px, 7vw, 88px); align-items: start; }
+.contact-production-grid aside > h2 { max-width: 490px; margin: 14px 0; color: #fff; font-size: clamp(30px, 3.4vw, 48px); line-height: 1.06; letter-spacing: 0; }
+.contact-production-grid aside > p { max-width: 510px; margin: 0; color: #b8c6dc; font-size: 16px; line-height: 1.65; }
+.contact-production-grid address { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; margin: 30px 0 16px; border: 1px solid rgba(126,165,236,.26); border-radius: 8px; overflow: hidden; background: rgba(126,165,236,.18); font-style: normal; }
+.contact-production-grid address span { display: grid; min-height: 86px; align-content: start; gap: 6px; padding: 16px; background: #0b1733; color: #d8e4fa; font-size: 14px; line-height: 1.45; overflow-wrap: anywhere; }
+.contact-production-grid address b { color: #7fa8ff; font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.contact-production-grid address a { color: #fff; text-decoration: none; }
+.contact-production-grid address a:hover { color: #a9c5ff; }
+.contact-map-link { display: inline-flex; min-height: 44px; align-items: center; gap: 8px; color: #c9dbff; font-size: 14px; font-weight: 800; text-decoration: none; }
+.contact-map-link:hover { color: #fff; }
+.contact-credibility { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
+.contact-credibility span { border: 1px solid rgba(144,120,231,.42); border-radius: 999px; padding: 8px 11px; color: #d6c6ff; font-size: 11px; font-weight: 800; line-height: 1.2; }
+
+.workspace-runner a, .workspace-tool-row a, .project-primary a { display: inline-flex; min-height: 36px; align-items: center; justify-content: center; padding: 0 12px; border-radius: 5px; background: #2f6cea; color: #fff; font-size: 12px; font-weight: 800; text-decoration: none; }
+.workspace-tool-row a { min-width: 64px; }
+
+@media (max-width: 900px) {
+  .candidate-contact-grid { grid-template-columns: 1fr; gap: 42px; }
+  .contact-production-grid { grid-template-columns: 1fr; gap: 42px; }
+  .client-wordmark-rail { animation-duration: 35s; }
+}
+@media (max-width: 620px) {
+  .candidate-credibility, .candidate-contact { padding: 78px 0; }
+  .client-wordmark-rail { gap: 10px; margin-top: 36px; }
+  .client-wordmark-rail span { min-width: 138px; height: 58px; padding: 0 12px; font-size: 14px; }
+  .credibility-markers { justify-content: flex-start; }
+  .contact-form { grid-template-columns: 1fr; padding: 20px; }
+  .contact-form label, .contact-form label:nth-of-type(3), .contact-form label:nth-of-type(5) { grid-column: 1; }
+  .monitor-panel--authentic img { aspect-ratio: 4 / 3; }
+  .contact-production-form { padding: 20px; }
+  .contact-form-grid { grid-template-columns: 1fr; }
+  .contact-production-grid address { grid-template-columns: 1fr; }
+  .contact-production-grid address span { min-height: auto; }
+}
+@media (prefers-reduced-motion: reduce) { .client-wordmark-rail { animation: none; width: 100%; flex-wrap: wrap; justify-content: center; } }
